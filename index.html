@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    background-image: url("images/saravana.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-</style>
+    <title>Cricket Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-<h1>Cricket Score App</h1>
-<p>Live Score: 210/5</p>
+
+<div class="overlay">
+
+    <div class="header">
+        <img src="images/logo.png" class="logo">
+        <h1>Cricket Scoreboard</h1>
+    </div>
+
+    <div class="score-box">
+        <h2 id="team">India vs Australia</h2>
+        <h3 id="score">250/3</h3>
+        <p id="overs">Overs: 40.2</p>
+    </div>
+
+    <button class="btn" onclick="updateScore();">Update Score</button>
+
+</div>
+
 </body>
 </html>
+
 
